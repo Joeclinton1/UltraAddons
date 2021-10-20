@@ -1,4 +1,4 @@
-const config = {attributes: true, childList: true, subtree:true};
+const config = {childList: true, subtree:true};
 
 const callback = function(mutationsList, observer) {
     // Use traditional 'for loops' for IE 11
