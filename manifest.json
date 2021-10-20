@@ -9,7 +9,7 @@
     "content_scripts": [
         {
           "matches": ["https://blackboard.durham.ac.uk/ultra/courses/*/outline/edit/document/*?courseId=*"],
-          "js": ["js/utils.js", "js/addons/outlinePeekAddon.js"]
+          "js": ["js/utils.js", "js/addons/preview-files.js"]
         }
       ]
   }
