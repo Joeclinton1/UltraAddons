@@ -1,0 +1,15 @@
+{
+    "name": "UltraAddons",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "js/background.js"
+    },
+    "action": {},
+    "content_scripts": [
+        {
+          "matches": ["https://blackboard.durham.ac.uk/ultra/courses/*/outline/edit/document/*?courseId=*"],
+          "js": ["js/utils.js", "js/addons/outlinePeekAddon.js"]
+        }
+      ]
+  }
