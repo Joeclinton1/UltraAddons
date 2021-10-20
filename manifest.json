@@ -8,7 +8,10 @@
     "action": {},
     "content_scripts": [
         {
-          "matches": ["https://blackboard.durham.ac.uk/ultra/courses/*/outline/edit/document/*?courseId=*"],
+          "matches": [
+              "https://blackboard.durham.ac.uk/ultra/courses/*/outline/edit/document/*?courseId=*",
+              "https://blackboard.durham.ac.uk/ultra/courses/*/outline"
+        ],
           "js": ["js/utils.js", "js/addons/preview-files.js"]
         }
       ]
