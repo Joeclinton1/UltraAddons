@@ -19,7 +19,7 @@ function addPreviewLinkFileContainer(container){
     container.querySelectorAll(".file-container").forEach((file_container)=>{
         const previewLink = file_container.querySelector(".file-preview a").getAttribute("data-ally-file-preview-url");
         const filenameSpan = file_container.querySelector("span.file-name");
-        filenameSpan.outerHTML = `<a href = "${previewLink}">${filenameSpan.outerHTML}</a>`;
+        filenameSpan.outerHTML = `<a href = "${previewLink}" target="_blank">${filenameSpan.outerHTML}</a>`;
     })
 }
 
@@ -27,7 +27,7 @@ function addPreviewLinkBBEditor(file_container){
     const previewLink = file_container.getAttribute("href");
     const filenameSpan = file_container.querySelector("span.bb-file-viewer-file-text");
     console.log(filenameSpan.innerText);
-    filenameSpan.outerHTML = `<a href = "${previewLink}">${filenameSpan.outerHTML}</a>`;;
+    filenameSpan.outerHTML = `<a href = "${previewLink}" target="_blank">${filenameSpan.outerHTML}</a>`;;
 }
 
 const observer = new MutationObserver(callback);
